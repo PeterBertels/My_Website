@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="codingFav.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Peter Bertels</title>
+    <font face="Verdana" size="4">
+</head>
+
+
+<body>
+    <button onclick="toggleColorOptions('light')">Light Theme</button>
+    <div id="light-options" style="display: none;">
+        <button onclick="changeColorScheme('light1')">Light 1</button>
+        <button onclick="changeColorScheme('light2')">Light 2</button>
+        <button onclick="changeColorScheme('light3')">Light 3</button>
+    </div>
+
+    <button onclick="toggleColorOptions('dark')">Dark Theme</button>
+    <div id="dark-options" style="display: none;">
+        <button onclick="changeColorScheme('dark1')">Dark 1</button>
+        <button onclick="changeColorScheme('dark2')">Dark 2</button>
+        <button onclick="changeColorScheme('dark3')">Dark 3</button>
+    </div>
+
+    <script src="script.js"></script>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="coursework.html">Relevant Coursework</a></li>
+            <li><a href="mailto:peterbertelss@gmail.com">Contact</a></li>
+        </ul>
+    </div>
+    </nav>
+    <div class="grid-container">
+        <h2>Relevant Course Work</h2>
+        <form id="myForm">
+            <div class="form-row">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Your name" required>
+            </div>
+            
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Your email" required>
+            </div>
+            
+            <div class="form-row">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Create a password" pattern=".{6,}" title="Six or more characters" required>
+            </div>
+            
+            <div class="form-row">
+                <label for="message">Message:</label>
+                <textarea id="message" placeholder="Your message" required></textarea>
+            </div>
+            
+            <div class="form-row">
+                <button type="submit">Submit</button>
+            </div>
+            
+            <div id="formFeedback"></div>
+        </form>
+        <div class="course-list">
+            <ul>
+                <li>CSCI 1110
+                    <ul>
+                        <li>The course offers a comprehensive introduction to computer science, covering both the hardware and software aspects of computers.</li>
+                        <li>It emphasizes programming skills, application of these skills in problem-solving, and the study of algorithmic concepts and linear data structures.</li>
+                        <li>Tools: Java</li>
+                    </ul>
+                </li>
+                <li>CSCI 1170
+                    <ul>
+                        <li>The course teaches students essential web concepts and skills necessary for designing, implementing, and maintaining web content, including UI and UX best practices, HTML, style sheets, and client-side programming.</li>
+                        <li>It covers multimedia foundations, dynamic content, and the organization and maintenance of web content.</li>
+                        <li>Tools: HTML, CSS, JavaScript</li>
+                    </ul>
+                </li>
+                <li>CSCI 1120
+                    <ul>
+                        <li>The course covers fundamental concepts in computer systems, focusing on how the hardware and software environment influences program behavior, and includes data and program representation, program translation, and operating systems.</li>
+                        <li>Additional topics include software engineering and networking, providing a broad understanding of key aspects in computer systems.</li>
+                        <li>Tools: C, Git</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="course-links">
+            <ol>
+                <lh>Links to more information about Courses</lh>
+                <li><a href="https://academiccalendar.dal.ca/Catalog/ViewCatalog.aspx?pageid=viewcatalog&topicgroupid=34829&entitytype=CID&entitycode=CSCI+1110" target="_blank">Dal Academic Calendar/1110</a></li>
+                <li><a href="https://academiccalendar.dal.ca/Catalog/ViewCatalog.aspx?pageid=viewcatalog&topicgroupid=34828&entitytype=CID&entitycode=CSCI+1170" target="_blank">Dal Academic Calendar/1170</a></li>
+                <li><a href="https://academiccalendar.dal.ca/Catalog/ViewCatalog.aspx?pageid=viewcatalog&topicgroupid=36433&entitytype=CID&entitycode=CSCI+1120#:~:text=This%20course%20introduces%20some%20key,software%20environment%20affects%20program%20behaviour." target="_blank">Dal Academic Calendar/1120</a></li>
+            </ol>
+        </div>
+    </div>
+    
+
+    <h2 class="bonus-content">Bonous Content</h2>
+    <table width="100%"> 
+        <tr>
+            <td width="100%">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/R2lcf45uvZ8" frameborder="0" allowfullscreen></iframe>
+            </td>
+            <td width="100%">
+                <video width="560" height="315" controls>
+                    <source src="codingStockVideo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+
+            <td>
+                <audio controls>
+                    <source src="typingSound.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </td>
+
+        </tr>
+    </table>
+    
+    <footer>
+        <p>Copyright &copy; 2024 by Peter Bertels</p>
+        <p>Contact information: <a href="mailto:peterbertelss@gmail.com">
+        peterbertelss@gmail.com</a>
+    </footer>
+</font>
+</body>
+</html>

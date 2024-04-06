@@ -1,0 +1,380 @@
+nav {
+    background-color: #9f9f9f; 
+    text-align: center;   
+    padding: 10px 0;
+}
+
+body {
+    background-color: #bbbaba;
+}
+
+.image-table {
+    width: 100%;
+}
+
+.image-table img {
+    width: 100%;
+    height: auto;
+    border: 4px solid #000;
+}
+
+footer {
+    background-color: #333;
+    color: #fff; 
+    font-family: 'Arial', sans-serif; 
+    text-align: center;
+    padding: 20px 0; 
+    font-size: 0.9em; 
+}
+
+footer a {
+    color: #f6f6f6; 
+    text-decoration: none; 
+}
+
+
+.image-cell {
+    width: 50%;
+}
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+}
+
+.text-cell {
+    width: 50%;
+}
+
+.university-link {
+    color: #0056b3; 
+    text-decoration: none; 
+}
+
+.university-link:hover {
+    text-decoration: underline; 
+}
+
+h4 {
+    margin-top: 0; 
+}
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+    border: 4px solid #000000; 
+    box-sizing: border-box; 
+}
+
+a:hover {
+    color: blue; 
+    text-decoration: underline; 
+}
+
+/* Styling for coursework.html <ul> using Grid Layout Properties */
+body {
+    display: grid;
+    grid-template-columns: 1fr; /* This already ensures that content takes up the full width */
+    gap: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #0a0a0a;
+    margin: 0; /* Removes default margin */
+}
+
+h2 {
+    text-align: center;
+    color: #000000;
+}
+
+ul, ol {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0; /* Removes default margin */
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #eef1f5;
+}
+
+a:hover {
+    color: #eaedf0;
+}
+
+lh {
+    font-weight: bold;
+    color: #f9f7f7;
+}
+
+.bonus-content {
+    color: black; /* Sets the color to black */
+    text-align: center; /* Centers the text */
+}
+
+/* Ensure that grid-container takes up the full width */
+.grid-container {
+    width: 100%;
+}
+
+/* If you have any other containers, ensure they also take up full width */
+.header-container, .course-list, .course-links {
+    width: 100%;
+}
+
+/* Adjust iframe, video, and audio to not exceed the width of their containers */
+iframe, video, audio {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style projects.html table using CSS Grid Areas */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "header header"
+        "project1 project2"
+        "banner banner";
+    gap: 20px;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+.header {
+    grid-area: header;
+    text-align: center;
+}
+
+.banner {
+    grid-area: banner;
+    text-align: center;
+}
+
+.project1 {
+    grid-area: project1;
+    text-align: center;
+}
+
+.project2 {
+    grid-area: project2;
+    text-align: center;
+}
+
+h2 {
+    color: #f5f5f6;
+}
+
+ul {
+    text-align: left;
+}
+
+a {
+    color: #edeff1;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fafbfb;
+}
+
+/* Style index.html using css flexbox */
+table {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+  }
+  
+  tr {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+  }
+  
+  td {
+    flex: 1; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding: 10px; 
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #050505; /* Dark header background */
+    color: rgb(7, 7, 7);
+  }
+  
+  .header-text, .header-image, .image-cell, .text-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .image-cell, .text-cell {
+    padding: 20px; /* Add padding inside each cell for spacing */
+  }
+  
+  .responsive-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .bordered-image {
+    border: 5px solid #333;
+    padding: 5px;
+  }
+  
+  /* Add nessecary selectors */
+  * {
+    box-sizing: border-box;
+  }
+  
+  body, nav, footer {
+    background-color: #797878;
+  }
+  
+  nav > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  div ~ h2 {
+    margin-top: 20px;
+  }
+  
+  h2 + div {
+    border-top: 2px solid #000;
+  }
+  
+  input[type="text"] {
+    border: 1px solid #ccc;
+    padding: 5px;
+  }
+  
+  p::first-line {
+    font-weight: bold;
+  }
+  
+  #myForm {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.form-row {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #4fa9f6;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Base styles */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: Arial, sans-serif;
+}
+
+/* Light theme color schemes */
+.light1, .light2, .light3 {
+    --primary-color: #f0f8ff; /* Default light background color */
+    --text-color: #10375e;    /* Default light text color */
+}
+
+.light1 {
+    --primary-color: #f0f8ff; /* AliceBlue */
+}
+
+.light2 {
+    --primary-color: #ffefd5; /* PapayaWhip */
+}
+
+.light3 {
+    --primary-color: #e0ffff; /* LightCyan */
+}
+
+/* Dark theme color schemes */
+.dark1, .dark2, .dark3 {
+    --primary-color: #34495e; /* Default dark background color */
+    --text-color: #ecf0f1;    /* Default dark text color */
+}
+
+.dark1 {
+    --primary-color: #34495e; /* Wet Asphalt */
+}
+
+.dark2 {
+    --primary-color: #2c3e50; /* Midnight Blue */
+}
+
+.dark3 {
+    --primary-color: #212529; /* Dark dark blue */
+}
+
+/* Applying the color scheme variables */
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+/* Additional styles for the theme buttons and options */
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#light-options, #dark-options {
+    margin-bottom: 20px;
+}
+
+/* Media queries */
+@media (max-width: 600px) {
+    body {
+        background-color: var(--primary-color); /* Use the theme's background color */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    body {
+        background-color: var(--primary-color); /* Use the theme's background color */
+    }
+}
+
+@media (min-width: 901px) {
+    body {
+        background-color: var(--primary-color); /* Use the theme's background color */
+    }
+}
